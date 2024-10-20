@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gora">
+        <img id="f" src="Bez tytułu.png">
+    </div>
+    <nav>
+        <a href="http://127.0.0.1:5500/" onclick="showSection('home')">Strona Główna</a>
+        <a href="#" onclick="showSection('ofert')">Co oferuje</a>
+        <a href="#" onclick="showSection('project')">Projekty</a>
+        <a href="#" onclick="showSection('contact')">Kontakt</a>
+    </nav>
+    <div id="srodek">
+        <section id="home" class="active">
+            <h2>Po Grafiki Zapraszam Na Mojego Instagrama:</h2>
+            <a href="https://www.instagram.com/mlody_graphics/" id="s">mlody_graphics</a>
+        </section>
+        <section id="ofert">
+            <div style="text-align: center;">
+                <h1>Co Oferuję</h1>
+                <ul style="display: inline-block;">
+                    <li>Wysoka jakość projektów.</li>
+                    <li>Niska cena.</li>
+                    <li>Szybka realizacja.</li>
+                    <li>Satysfakcja klienta.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="project">
+            <h1>Moje Projekty:</h1> 
+            <div id="zdj">
+                <img src="ss.png">
+                <img src="ddd.png">
+                <img src="aaaa.png">
+                <img src="ddf.png">
+                <img src="z.png">
+                <img src="aaa.png">
+                <img src="fff.png">
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Możesz się skontaktować za Pomomcą:</h1>    
+            <a href="https://www.instagram.com/mlody_graphics/"><img src="pngegg.png" id="q">: mlody_graphics</a>
+            <a href="mailto:mlodygraphics@gmail.com"><img src="mai.png" id="w">:E-mail</a>
+        </section>
+        
+        <script>
+            function showSection(sectionId) {
+                var sections = document.querySelectorAll('section');
+                sections.forEach(function(section) {
+                    section.classList.remove('active');
+                });
+                document.getElementById(sectionId).classList.add('active');
+            }
+        </script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,124 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color:#4e4e4e;
+    height: 100vh;
+    
+}
+#gora{
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    height: 200px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #3b3a3a;
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+a {
+    background-image: linear-gradient(
+      to right,
+      #111111,
+      #000000 50%,
+      #ffffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+  
+a:before {
+    content: '';
+    background: #e4e4e4;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+  
+a:hover {
+   background-position: 0;
+}
+  
+a:hover::before {
+    width:100%;
+}
+section {
+    display: none;
+    padding: 20px;
+}
+section.active {
+    display: block;
+}
+#home{
+    color: white;
+    text-align: center;
+    font-size: medium;
+}
+#s{
+    color:salmon
+}
+
+#ofert{
+    color: white;
+   background-color: #252529;
+}
+
+ul {
+    padding: 0;
+    text-align: left;
+}
+li {
+    margin: 5px 0;
+    font-size: larger;
+}
+#project{
+    color: white;
+    text-align: center;
+    background-color: #000000;
+}
+img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+#f{
+    margin: -10px;
+    height: 196px;
+    width: 204px;
+}
+#contact{
+    color: white;
+    flex-direction: column;
+}
+#q{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0px;
+    
+}
+#w{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 0px;
+}
